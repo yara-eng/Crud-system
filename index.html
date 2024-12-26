@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./image/percent-solid.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>CRUD System</title>
+</head>
+<body >
+    <div class="content m-auto mt-5  p-5">
+        <h1 class="text-center mb-3">CRUD SYSTEM</h1>
+
+        <label for="productName" class="mb-1">Product Name</label>
+        <input type="text"  class="form-control mb-4" id="productName" onblur="validationName()">
+
+        <label for="productCategory" class="mb-1">Product Category</label>
+        <input type="text"  class="form-control mb-4" id="productCategory">
+
+        <label for="productPrice" class="mb-1">Product Price</label>
+        <input type="number"  class="form-control mb-4" id="productPrice">
+
+        <label for="Description" class="mb-1">Description</label>
+        <textarea type="text"  class="form-control mb-4" id="Description"></textarea>
+        <p class="text-danger text-center d-none" id="textValid">The product name must begin with a capital letter and must not be less than three letters</p>
+        <p class="text-danger text-center d-none" id="textMust">you must writ product</p>
+        <button class="btn btn-add  py-2 px-4" onclick="addProduct()">Add Product</button>
+        <button class="btn btn-reset py-2 px-4" onclick="clearForm()">Reset</button>
+
+       <div class="clear"></div>
+    </div> <!-- ./content -->
+
+    <div class="search  m-auto mt-5">
+        <input onkeyup="search()" type="text" id="search" placeholder="Search..." class="form-control">
+    </div> <!-- ./search -->
+
+    <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+            <th scope="col">Update</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table> 
+
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
