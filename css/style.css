@@ -1,9 +1,11 @@
-body{
-    background-color: #1aa18d;
+
+
+ body{
+    background-color: #e9abb1;
     color: white;
 }
 .content{
-    background-color: whitesmoke;
+    background-color:#040000;
     color:#1f1f22 ;
     width: 65%;
     position: relative;
@@ -13,17 +15,17 @@ body{
     border-bottom-left-radius: 2%;
 }
 h1{
-    color: #107768; 
+    color: #e9abb1; 
     font-family: 'Oswald', sans-serif;
     font-size: 50px;
 }
 .content label{
-    color: #1aa18d;
+    color: #e9abb1;
     font-weight: 500;
 }
 .content .btn-add{
     background-color: #cd1150;
-    color: white;
+    color: #040000;
     /* position: absolute;
     right: 0;
     margin-right: 50px; */
@@ -31,8 +33,8 @@ h1{
     font-weight: 600;
 }
 .content .btn-reset{
-    background-color:#107768;
-    color: white;
+    background-color:#e9abb1;
+    color: #040000;
     /* position: absolute;
     right: 21%; */
     float: right;
@@ -47,14 +49,14 @@ h1{
     width: 50%;
 }
 .table{
-    color: white;
+    color: #040000;
     width: 65%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 .table .update{
-    color: #cd1150;
+    color: #ffffff;
     background-color: transparent;
 }
 .table .delete{
